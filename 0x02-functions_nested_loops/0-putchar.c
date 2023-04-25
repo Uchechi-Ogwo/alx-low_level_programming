@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - Entry point
- * Description: "prints _putch to stdout"
+ *main - Entry point
  * Return: Always 0
  */
+
 int main(void)
 {
 	_putchar('-');
