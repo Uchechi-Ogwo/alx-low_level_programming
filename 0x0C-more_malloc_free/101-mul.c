@@ -20,7 +20,7 @@ int is_digit(char *s)
 			return (0);
 		i++;
 	}
-	return (i);
+	return (1);
 }
 
 /**
