@@ -58,7 +58,7 @@ void errors(void)
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
-	int len1, len2, len, i, digit1, digit2, *result, a = 0, carry;
+	int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
 
 	s1 = argv[1], s2 = argv[2];
 
@@ -82,8 +82,8 @@ int main(int argc, char *argv[])
 			result[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
 		}
-	if (carry > 0)
-		result[len1 + len2 + 1] += carry;
+		if (carry > 0)
+			result[len1 + len2 + 1] += carry;
 	}
 	for (i = 0; i < len - 1; i++)
 	{
@@ -92,9 +92,9 @@ int main(int argc, char *argv[])
 		if (a)
 			_putchar(result[i] + '0');
 	}
-		if (!a)
+	if (!a)
 			_putchar('0');
-		_putchar('\n');
-		free(result);
+	_putchar('\n');
+	free(result);
 	return (0);
 }
