@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * main - program that persforms simple operations
+ * main - program that performs simple operations
  * @argc: number of arguments
  * @argv: array of arguments
  * Return: Always 0.
@@ -20,6 +20,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+
 	num1 = atoi(argv[1]);
 	op = argv[2];
 	num2 = atoi(argv[3]);
