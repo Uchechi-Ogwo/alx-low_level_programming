@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	va_list list;
 	unsigned int i = 0, j, c = 0;
 	char *str;
-	const char t_arg[] = "cjfs";
+	const char t_arg[] = "cifs";
 
 	va_start(list, format);
 	while (format && format[i])
